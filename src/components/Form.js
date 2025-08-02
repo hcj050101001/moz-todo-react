@@ -1,8 +1,16 @@
 import React from "react";
 
+//this is a comment
 function Form(props) {
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        props.onSubmit("Say hello!");
+    }
+
+
     return (
-        <form>
+        <form onSubmit={handleSubmit} >
             <h2 className="label-wrapper">
                 <label htmlFor="new-todo-input" className="label__lg">
                     What needs to be done?
@@ -16,7 +24,7 @@ function Form(props) {
                 autoComplete="off"
             />
             <button type="submit" className="btn btn__primary btn__lg">
-                Addgit
+                Add
             </button>
         </form>
     );
