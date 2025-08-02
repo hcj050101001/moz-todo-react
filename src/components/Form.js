@@ -16,7 +16,7 @@ function Form(props) {
                 autoComplete="off"
             />
             <button type="submit" className="btn btn__primary btn__lg">
-                Add
+                Addgit
             </button>
         </form>
     );
